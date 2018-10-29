@@ -9,3 +9,15 @@ X4M300 drivers for MacOs and Linux are added to the repository for easier access
 ```shell
 ./setup/install.sh
 ```
+
+# Usage
+
+Example python script for aquireing data from the sensor:
+
+```python
+sd = StreamData(USB_PORT)
+
+for i_data, q_data in sd:
+    print('i_data:', i_data)
+    print('q_data:', q_data)
+```
