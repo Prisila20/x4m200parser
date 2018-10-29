@@ -1,0 +1,8 @@
+#!/bin/bash
+
+export TOP=$(git rev-parse --show-toplevel)
+
+export PY_PARSER_PATH=$TOP
+
+export OS=$(uname -a)
+export PYMOD_PATH=$TOP/setup/pymoduleconnector/$OS/
