@@ -7,7 +7,7 @@ The XeThru [X4M300](https://www.xethru.com/x4m300-presence-sensor.html) is Novel
 X4M300 drivers for MacOs and Linux are added to the repository for easier access.  Other drivers are accessible [here](https://www.xethru.com/community/resources/).  For installing the drivers and the parser, write
 
 ```console
-$ ./setup/install.sh
+$./setup/install.sh
 ```
 
 # Usage
