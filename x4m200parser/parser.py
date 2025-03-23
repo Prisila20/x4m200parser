@@ -12,7 +12,7 @@ class StreamData:
 
     def __init__(self, usb_port):
         '''
-        Parser for streaming data from Xethru X4M300 presence sensor from Novelda.
+        Parser for streaming data from Xethru x4m200 presence sensor from Novelda.
 
         :param usb_port: String
         '''
@@ -20,13 +20,13 @@ class StreamData:
 
         self.mc = ModuleConnector(usb_port)
 
-        self.x4m300 = self.mc.get_x4m300()
+        self.x4m200 = self.mc.get_x4m200()
 
-        self.x4m300.set_sensor_mode(XTID_SM_STOP, 0)
-        self.x4m300.load_profile(XTS_ID_APP_PRESENCE_2)
-        self.x4m300.set_output_control(XTS_ID_PRESENCE_SINGLE, 1)
-        self.x4m300.set_output_control(XTS_ID_BASEBAND_IQ, 1)
-        self.x4m300.set_sensor_mode(XTID_SM_RUN, 0)
+        self.x4m200.set_sensor_mode(XTID_SM_STOP, 0)
+        self.x4m200.load_profile(XTS_ID_APP_PRESENCE_2)
+        self.x4m200.set_output_control(XTS_ID_PRESENCE_SINGLE, 1)
+        self.x4m200.set_output_control(XTS_ID_BASEBAND_IQ, 1)
+        self.x4m200.set_sensor_mode(XTID_SM_RUN, 0)
 
 
     def __iter__(self):
@@ -38,7 +38,7 @@ class StreamData:
         Read data from sensor
         :return:
         '''
-        messege = self.x4m300.read_message_baseband_iq()
+        messege = self.x4m200.read_message_baseband_iq()
 
         i_data = []
         q_data = []
