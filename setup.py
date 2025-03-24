@@ -2,11 +2,11 @@
 
 from distutils.core import setup
 
-setup(name='x4m300parser',
+setup(name='x4m200parser',
       version='0.1',
-      description='Parser fro x4m300',
-      author='Geir Kulia',
-      author_email='geir@kulia.no',
-      url='http://kulia.no',
-      packages=['x4m300parser'],
+      description='Parser fro x4m200',
+      author='Prisila',
+      author_email='pishabakaki@gmail.com',
+      url='http://ishabakaki.noweb',
+      packages=['x4m200parser'],
      )
