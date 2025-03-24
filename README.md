@@ -1,6 +1,6 @@
-# Python parser for Novelda’s XeThru X4M300
+# Python parser for Novelda’s XeThru X4M200
 
-The XeThru [X4M300](https://www.xethru.com/x4m300-presence-sensor.html) is Novelda’s presence and occupancy sensor powered by the XeThru X4 ultra wideband radar chip. This parser extracts the raw data from the radar, without Novelda’s processing.  
+The XeThru [X4M200](https://www.xethru.com/x4m300-presence-sensor.html) is Novelda’s presence and occupancy sensor powered by the XeThru X4 ultra wideband radar chip. This parser extracts the raw data from the radar, without Novelda’s processing.  
 
 # Installing
 
